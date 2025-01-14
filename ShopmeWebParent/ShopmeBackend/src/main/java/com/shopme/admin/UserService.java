@@ -16,6 +16,7 @@ public class UserService {
 	private UserRepository userRepo;
 	
 	@Autowired
+	
 	private RoleRepository roleRepo;
 	
 	public List<User> listAll(){
@@ -23,6 +24,7 @@ public class UserService {
 	}
 	
 	public List<Role> listRoles(){
+		
 		return (List<Role>)roleRepo.findAll();
 	}
 

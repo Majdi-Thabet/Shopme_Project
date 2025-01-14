@@ -136,7 +136,7 @@
 			
 			<div class="text-center">
 				<input type="submit" value = "save" class="btn btn-primary m-3"/>
-				<input type="button" value ="Cancel" class="btn btn-secondary"/>
+				<input type="button" value ="Cancel" class="btn btn-secondary" id="buttonCancel"/>
 			</div>
 		</div>
 	
@@ -149,6 +149,17 @@
 	</div>
 
 </div>
+   <script type="text/javascript">
+	$(document).ready(function(){
+		$("#buttonCancel").on("click", function() {
+			window.location = "[[@{/users}]]";
+		
+		});
+	
+	});
+	</script>
 	
 </body>
+
+
 </html>
